@@ -7,7 +7,7 @@
     <title>Runtrack2</title>
 </head>
 <body>
-    <h1>Jour1, Job02</h1>
+    <h1>Jour2, Job02</h1>
     <p><?php for ($i = 0; $i<=1337; $i++) { //boucle for qui affiche les nombres de 1 à 1337
                 if ($i===26 OR $i===37 OR $i===88 OR $i===1111 OR $i===3233) {
                     echo "<br>";        //saut de ligne
