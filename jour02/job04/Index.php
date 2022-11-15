@@ -15,11 +15,11 @@
                     echo "<br>";
                 }
                 else if ($i===$i%5) { //affichage des nombres de 1 à 100 divisibles par 5
-                    echo "Buzz"; //affichage des nombres en gras
+                    echo "Buzz"; 
                     echo "<br>"; //saut de ligne
                 }
                 else if ($i===$i%3 AND $i===$i%5) { //affichage des autres nombres
-                    echo "FizzBuzz"; //affichage des autres nombres
+                    echo "FizzBuzz"; 
                     echo "<br>"; //saut de ligne
                     }
                 }
