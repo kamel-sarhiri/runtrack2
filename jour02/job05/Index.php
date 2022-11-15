@@ -9,7 +9,7 @@
 <body>
     <h1>Jour2, Job05</h1>
     <p><?php
-    //On prend chaque nombre entre 2 et n (0 et 1 n'étant pas premier)
+    //On prend chaque nombre entre 2 et 1000 (0 et 1 n'étant pas premier)
         for ($i=2; $i<=1000; $i++) {
             $nbDiv = 0;//Et on compte le nombre de diviseurs
             for ($j=1; $j<=$i; $j++) {
