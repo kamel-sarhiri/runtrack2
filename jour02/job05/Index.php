@@ -14,7 +14,7 @@
             $nbDiv = 0;//Et on compte le nombre de diviseurs
             for ($j=1; $j<=$i; $j++) {
                 if ($i%$j==0) {   //Si le reste de la division est égal à 0, alors le nombre est divisible
-                    $nbDiv++;
+                    $nbDiv++; //On incrémente le nombre de diviseurs
                 }
             }
             if($nbDiv == 2){ //si le nombre de diviseur est égal à 2, alors le nombre est premier
