@@ -9,17 +9,17 @@
 <body>
     <h1>Jour1, Job03</h1>
     <p><?php for ($i = 0; $i<=100; $i++) { //boucle for qui affiche les nombres de 1 à 100
-                if ($i==0 AND $i<=20) { //boucle for qui affiche les nombres de 1 à 20
+                if ($i<=20) { //boucle for qui affiche les nombres de 1 à 20
                     echo "<i>$i</i>"; //affichage des nombres en italique
                     echo "<br>";        //saut de ligne
-                }
-                else if ($i==25 AND $i<=50) { //affichage des nombres de 25 à 50 en gras
-                    echo "<b>$i</b>"; //affichage des nombres en gras
-                    echo "<br>"; //saut de ligne
                 }
                 else if ($i==42) { //affichage de la phrase "La Plateforme_" à la place du nombre 42
                     echo "LaPlateforme_";
                     echo "<br>";
+                }
+                else if ($i>=25 AND $i<=50) { //affichage des nombres de 25 à 50 en gras
+                    echo "<u>$i</u>"; //affichage des nombres en gras
+                    echo "<br>"; //saut de ligne
                 }
                 else { //affichage des autres nombres
                     echo $i; //affichage des autres nombres
