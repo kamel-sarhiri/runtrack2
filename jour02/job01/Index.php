@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Runtrack2</title>
 </head>
 <body>
     <h1>Jour1, Job01</h1>
-    <p><?php for ($i = 1; $i<1337; $i++){
-                if ($i===42){
+    <p><?php for ($i = 1; $i<1337; $i++) { //boucle for qui affiche les nombres de 1 à 1337
+                if ($i===42) { 
                     echo "<b><u>$i</u></b>";
                     echo "<br>";
                 }
-
-                else {
+                else { 
                     echo $i;
                     echo "<br>";
                     }
