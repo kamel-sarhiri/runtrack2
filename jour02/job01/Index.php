@@ -9,11 +9,11 @@
 <body>
     <h1>Jour2, Job01</h1>
     <p><?php for ($i = 1; $i<1337; $i++) { //boucle for qui affiche les nombres de 1 à 1337
-                if ($i===42) { 
+                if ($i===42) {
                     echo "<b><u>$i</u></b>";
                     echo "<br>";
                 }
-                else { 
+                else {
                     echo $i;
                     echo "<br>";
                     }
