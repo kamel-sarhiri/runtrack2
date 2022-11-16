@@ -7,36 +7,56 @@
     <title>Runtrack2</title>
 </head>
 <body>
-    <h1>Jour3, Job05</h1>
-    <p><u>Boucle For</u></p>
+    <h1>Jour3, Job06</h1>
+    <p><u>Décompte des consonnes et des voyelles</u></p>
     <?php
-    $str = "On n'est pas le meilleur quand on le croit mais quand on le sait";
-    $dic = [
-        "consonnes" => 0,
-        "voyelles" => 0,
-    ]
-    for ($i = 0; (isset($str [$i])); $i++) {
-        if ($str[$i] === "a" || $str[$i] === "e" || $str[$i] === "i" || $str[$i] === "o" || $str[$i] === "u" || $str[$i] === "y" || $str[$i] === "A" || $str[$i] === "E" || $str[$i] === "I" || $str[$i] === "O" || $str[$i] === "U" || $str[$i] === "Y") {
-            $dic["voyelles"]++;
-        } else {
-            $dic["consonnes"]++;
+$str= "On n'est pas le meilleur quand on le croit mais quand on le sait.";
+$voyelles= ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U', 'y', 'Y'];
+$dic = [
+    "consonnes" => 0,
+    "voyelles" => 0,
+];
+$i=0;
+while ($str[$i] != '.'){ //parcourt la chaine de caractère jusqu'au point
+        for($j = 0; $j < 12; $j++){ //parcourt le tableau des voyelles
+            if ($str[$i] === $voyelles[$j] ){ //si le caractère de la chaine est égal à une voyelle
+                $dic["voyelles"]++; //incrémente le nombre de voyelles
+                break; //sort de la boucle
+            } else if ($j==11 AND $str[$i]!=" " AND $str[$i]!="." AND $str[$i]!="'" AND $str[$i]!=","){ 
+                $dic["consonnes"]++; //incrémente le nombre de consonnes
+            }
         }
-    }
-    echo "Il y a ".$dic["voyelles"]." voyelles et ".$dic["consonnes"]." consonnes dans la phrase";
+    $i++; //incrémente le compteur de la boucle while
+}
 
-    ?>
 
-    <table> border : 1px solid black;
+?>
+
+<!--html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jour 3 job05</title>
+</head>
+<body>
+    
+    <table border : 1px >
+        <tr><th>Consonnes</th><th>Voyelles</th></tr>
         <tr>
-            <th>Consonnes</th>
-            <th>Voyelles</th>
+            <td>
+                <?php 
+                    echo $dic["consonnes"]; //affiche le nombre de consonnes
+                ?>
+            </td>
+            
+            <td>
+                <?php 
+                    echo $dic["voyelles"]; //affiche le nombre de voyelles
+                ?>
+            </td>
         </tr>
-        <tr>
-            <td>  </td>
-            <td>    </td>
-        </tr>
-       
-
     </table>
+
 </body>
 </html>
