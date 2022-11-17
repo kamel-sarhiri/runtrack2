@@ -29,18 +29,18 @@
 
     </form>
     <table border : 1px >
-        <tr><th>Arguments</th><th>Valeurs</th></tr>
+        <tr><th>Arguments</th><th>Valeurs</th></tr> 
         <?php
             $count=0;
             foreach ($_GET as $args => $value) {
                 $len=0;
                 for ($i = 0; (isset($value[$i])); $i++) {
-                $len++; // Compte le nombre d'arguments
+                $len++; // Compte le nombre d'arguments et de valeurs
                 }
-                if ($len > 0) {
-                    echo "<tr>";
-                    echo "<td>$args</td>";
-                    echo "<td>$value</td>";
+                if ($len > 0) { // si la valeur est supérieure à 0
+                    echo "<tr>"; 
+                    echo "<td>$args</td>"; // Affiche les arguments
+                    echo "<td>$value</td>"; // Affiche les valeurs
                     echo "</tr>";
 
                 }
