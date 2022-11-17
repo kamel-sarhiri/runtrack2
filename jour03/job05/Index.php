@@ -7,7 +7,7 @@
     <title>Runtrack2</title>
 </head>
 <body>
-    <h1>Jour3, Job06</h1>
+    <h1>Jour3, Job05</h1>
     <p><u>Décompte des consonnes et des voyelles</u></p>
     <?php
 $str= "On n'est pas le meilleur quand on le croit mais quand on le sait.";
@@ -32,14 +32,6 @@ while ($str[$i] != '.'){ //parcourt la chaine de caractère jusqu'au point
 
 ?>
 
-<!--html-->
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>jour 3 job05</title>
-</head>
-<body>
     
     <table border : 1px >
         <tr><th>Consonnes</th><th>Voyelles</th></tr>
