@@ -8,11 +8,11 @@
     <title>Runtrack2</title>
 </head>
 <body>
-    <h1>Jour4, Job02</h1>
-    <p><u>Formulaire type GET</u></p>
+    <h1>Jour4, Job04</h1>
+    <p><u>Formulaire type Post</u></p>
     
 
-    <form  action="" method="get">
+    <form  action="" method="post">
         <label for="nom">Nom :</label>
         <input type="text" name="nom" id="nom">
         <br>
@@ -33,7 +33,7 @@
         <tr><th>Arguments</th><th>Valeurs</th></tr> 
         <?php
             $count=0;
-            foreach ($_GET as $args => $value) {
+            foreach ($_POST as $args => $value) {
                 $len=0;
                 for ($i = 0; (isset($value[$i])); $i++) {
                 $len++; // Compte le nombre d'arguments et de valeurs
