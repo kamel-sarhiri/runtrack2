@@ -1,5 +1,3 @@
-
-<!-- Partie HTML -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,19 +27,17 @@
     <br>
     <h3>Liste déroulante :</h3>
     <br>
-<div class="boite_horizontale">
-    <form method="get" action="">
-        <select name="style" id="style">
-        <option value="">choississez un style</option>
-        <option value="style1">style 1</option>
-        <option value="style2">style 2</option>
-        <option value="style3">style 3</option>
-        </select>
-        <input type="submit" value="Selectionner" id="bouton">
-    </form>
-</div>
-        <br>
-        <br>
+    <div class="boite_horizontale">
+        <form method="get" action="">
+            <select name="style" id="style">
+            <option value="">choississez un style</option>
+            <option value="style1">style 1</option>
+            <option value="style2">style 2</option>
+            <option value="style3">style 3</option>
+            </select>
+            <input type="submit" value="Selectionner" id="bouton">
+        </form>
+    </div>
     
 </body>
 </html>
