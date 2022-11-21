@@ -1,0 +1,51 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  font-family: "Roboto", sans-serif;
+}
+.boite_horizontale {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: transparent;
+  box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+  border-radius: 10px;
+}
+
+#bouton {
+  border-radius: 100px;
+  font-weight: bold;
+  border-color: #ffca4b;
+  background-color: #ffca4b;
+  font-size: 16px;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+#bouton:hover {
+  background-color: #154284;
+}

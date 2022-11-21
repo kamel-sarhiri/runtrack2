@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  font-family: "Arial", sans-serif;
+}
+.boite_horizontale {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #cb0b0b;
+  border-radius: 10px;
+}
+
+#bouton {
+  border-radius: 100px;
+  font-weight: bold;
+  border-color: #ffca4b;
+  background-color: #ffca4b;
+  font-size: 16px;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+#bouton:hover {
+  background-color: #fff;
+}
