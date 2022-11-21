@@ -18,6 +18,10 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
+.body {
+  background-color: #588b45;
+}
+
 .boite_horizontale {
   display: flex;
   justify-content: center;
