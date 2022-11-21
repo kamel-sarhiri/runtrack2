@@ -17,6 +17,7 @@ select,
 button {
   font-family: "Arial", sans-serif;
 }
+
 .boite_horizontale {
   display: flex;
   justify-content: center;
