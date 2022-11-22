@@ -22,6 +22,9 @@
             case "/":
                 $resultat = $a / $b;
                 break;
+            case "%":
+                $resultat = $a % $b;
+                break;
             default:
                 echo "Erreur";
                 break;
@@ -52,7 +55,7 @@
         <input type="text" name="nombre1" id="nombre1">
         <br>
         <br>
-        <label for="operator">type d'opération :</label>
+        <label for="operator">Type d'opération :</label>
         <select name="operator" id="operator">
             <option value="+">+</option>
             <option value="-">-</option>
@@ -72,10 +75,10 @@
 
         <?php
             if (isset($_GET['nombre1']) && isset($_GET['nombre2']) && isset($_GET['operator'])) {
-                $nombre1 = $_GET['nombre1'];
-                $nombre2 = $_GET['nombre2'];
+                $number1 = $_GET['nombre1'];
+                $number2 = $_GET['nombre2'];
                 $operator = $_GET['operator'];
-                echo calcul($nombre1, $operator, $nombre2);
+                echo "Le résultat est : ".calcul($number1, $operator, $number2);
             }
                 
                 
