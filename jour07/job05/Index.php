@@ -13,12 +13,12 @@
     <h3>Les fonctions :</h3>
     <br>
     <form  action="" method="get">
-        <label for="mot">Entrez un mot :</label>
-        <input type="text" name="mot" id="mot">
+        <label for="mot"></label>
+        <input type="text" name="mot" id="mot" placeholder="Entrez un mot">
         <br>
         <br>
-        <label for="lettre">Entrez une lettre :</label>
-        <input type="text" name="lettre" id="lettre">
+        <label for="lettre"></label>
+        <input type="text" name="lettre" id="lettre" placeholder="Entrez une lettre">
         <br>
         <br>
         <input type="submit" value="Envoyer">
