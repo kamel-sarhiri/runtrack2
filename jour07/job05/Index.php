@@ -30,7 +30,7 @@
 
     function occurence($mot, $lettre) {
         $occurence = 0;
-        for ($i=0; $i < strlen($mot); $i++) {
+        for ($i=0; isset(($mot[$i])); $i++) {
             if ($mot[$i] == $lettre) {
                 $occurence++;
             }
