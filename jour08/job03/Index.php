@@ -15,7 +15,7 @@ session_start();
 <body>
     <h1>jour 8 job03</h1>
     <br>
-    <h3>Les fonctions :</h3>
+    <h3>Les sessions :</h3>
     <br>
     <form  action="" method="post">
         <label for="prenom"></label>
