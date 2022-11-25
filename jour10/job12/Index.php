@@ -3,7 +3,7 @@
 
 $mysqli = new mysqli("localhost", "root", "", "jour09");
 
-$request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
+$request = $mysqli->query("SELECT prenom, nom, naissance FROM etudiants WHERE naissance BETWEEN '1998-01-01' AND '2018-12-31';");
 
 
 // affichage
@@ -34,10 +34,10 @@ $request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
             border-collapse: collapse;
         }
     </style>
-    <title>jour 10 job09</title>
+    <title>jour 10 job12</title>
 </head>
 <body>
-    <h1>jour 10 job09</h1>
+    <h1>jour 10 job12</h1>
     <br>
     <h3>PHP + SQL :</h3>
     <br>
@@ -46,7 +46,9 @@ $request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
     <table>
         <thead>
             <tr>
-                <th>Capacite totale (décroissant)</th>
+                <th>prénom</th>
+                <th>nom</th>
+                <th>date de naissance</th>
                
             </tr>
         </thead>
@@ -55,9 +57,9 @@ $request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
             while (($result = $request->fetch_array())!= null)
             {
                 echo "<tr>";
+                echo "<td>".$result['prenom']."</td>";
                 echo "<td>".$result['nom']."</td>";
-                echo "<td>".$result['id_etage']."</td>";
-                echo "<td>".$result['capacite']."</td>";
+                echo "<td>".$result['naissance']."</td>";
                 echo "<tr>";
             }
             ?>
@@ -66,6 +68,3 @@ $request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
 
 
 </body>
-
-
-
