@@ -3,7 +3,7 @@
 
 $mysqli = new mysqli("localhost", "root", "", "jour09");
 
-$request = $mysqli->query("SELECT SUM(capacite) FROM salles;");
+$request = $mysqli->query("SELECT * FROM salles ORDER BY capacite DESC;");
 
 
 // affichage
@@ -34,10 +34,10 @@ $request = $mysqli->query("SELECT SUM(capacite) FROM salles;");
             border-collapse: collapse;
         }
     </style>
-    <title>jour 10 job08</title>
+    <title>jour 10 job09</title>
 </head>
 <body>
-    <h1>jour 10 job08</h1>
+    <h1>jour 10 job09</h1>
     <br>
     <h3>PHP + SQL :</h3>
     <br>
@@ -55,7 +55,9 @@ $request = $mysqli->query("SELECT SUM(capacite) FROM salles;");
             while (($result = $request->fetch_array())!= null)
             {
                 echo "<tr>";
-                echo "<td>".$result['SUM(capacite)']."</td>";
+                echo "<td>".$result['nom']."</td>";
+                echo "<td>".$result['id_etage']."</td>";
+                echo "<td>".$result['capacite']."</td>";
                 echo "<tr>";
             }
             ?>
