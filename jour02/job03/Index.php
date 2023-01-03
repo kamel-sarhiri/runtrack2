@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Jour2, Job03</h1>
-    <p><?php for ($i = 0; $i<=100; $i++) { //boucle for qui affiche les nombres de 1 à 100
+    <h2>Méthode 1</h2>
+    <?php for ($i = 0; $i<=100; $i++) { //boucle for qui affiche les nombres de 1 à 100
                 if ($i<=20) { //boucle for qui affiche les nombres de 1 à 20
                     echo "<i>$i</i>"; //affichage des nombres en italique
                     echo "<br>";        //saut de ligne
@@ -26,7 +27,24 @@
                     echo "<br>"; //saut de ligne
                     }
                 }
-        ?>
-    </p>
+    ?>
+    <h2>Méthode 2</h2>
+    <?php for ($i = 0; $i<=100; $i++) { 
+                if ($i<=20) { ?> 
+                    <i><?php echo $i ?></i> 
+                <?php }
+                else if ($i==42) {  
+                    echo "LaPlateforme_";?>
+                <?php }
+                else if ($i>=25 AND $i<=50) { ?> 
+                    <u><?php echo $i ?></u>
+                <?php }
+                else {  
+                    echo $i;?> 
+                <?php } ?>
+                <br>
+                <?php }
+                ?>
+    
 </body>
 </html>

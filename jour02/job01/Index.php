@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Jour2, Job01</h1>
-    <p><?php for ($i = 1; $i<1337; $i++) { //boucle for qui affiche les nombres de 1 à 1337
+    <h2>Méthode 1</h2>
+    <?php for ($i = 0; $i<=1337; $i++) { //boucle for allant de 1 à 1337 (non compris) et qui s'incrémente de +1
                 if ($i===42) {
                     echo "<b><u>$i</u></b>";
                     echo "<br>";
@@ -18,7 +19,20 @@
                     echo "<br>";
                     }
             }
-        ?>
-    </p>
+    ?>
+
+    <h2>Méthode 2</h2>
+    <?php for ($i = 0; $i<=1337; $i++) { //boucle for allant de 1 à 1337 (non compris) et qui s'incrémente de +1
+                if ($i===42) { 
+    ?>
+                    <b><u><?php echo $i; ?></u></b>
+            <?php } 
+                else { 
+            ?>
+                    <?php echo $i; ?>
+                    
+                   <?php } ?>
+                    <br>
+            <?php } ?>
 </body>
 </html>
