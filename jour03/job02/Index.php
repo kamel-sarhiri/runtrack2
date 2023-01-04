@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack2</title>
+    <title>Runtrack2 Jour3</title>
 </head>
 <body>
     <h1>Jour3, Job02</h1>

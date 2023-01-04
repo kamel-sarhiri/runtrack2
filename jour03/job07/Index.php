@@ -13,17 +13,17 @@
     <?php
         $str= "certaines choses changent, et d'autres ne changeront jamais.";
         echo $str."<br>";
-        for ($i = 1; isset($str[$i]); $i++) {
+        for ($i = 1; isset($str[$i]); $i++) { // $i = 1 pour commencer à l'index 1
             echo $str[$i]; // Affiche les caractères à l'index suivant
         }
-        echo $str[0]; // Affiche le premier caractère
+        echo $str[0]; // Affiche le premier caractère de la string
     ?>
     <p><u>Boucle While</u></p>
     <?php
     $str = "certaines choses changent, et d'autres ne changeront jamais.";
     echo $str."<br>";
 
-    $i = 1;
+    $i = 1; // $i = 1 pour commencer à l'index 1
     while (isset($str [$i])) { // Tant que l'index existe
         echo $str[$i]; // Affiche les caractères à l'index suivant
         $i++; // Incrémente de 1
