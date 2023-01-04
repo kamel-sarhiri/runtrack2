@@ -28,7 +28,7 @@
         echo $str[$i]; // Affiche les caractères à l'index suivant
         $i++; // Incrémente de 1
     }
-    echo $str[0]; // Affiche le premier caractère
+    echo $str[0]; // Affiche le premier caractère de la string
     ?>
 
 </body>

@@ -11,7 +11,7 @@
     <p><?php
     //On prend chaque nombre entre 2 et 1000 (0 et 1 n'étant pas premier)
         for ($i=2; $i<=1000; $i++) {
-            $nbDiv = 0;//Et on compte le nombre de diviseurs
+            $nbDiv = 0;//création d'une variable qui va compter le nombre de diviseurs
             for ($j=1; $j<=$i; $j++) {
                 if ($i%$j==0) {   //Si le reste de la division est égal à 0, alors le nombre est divisible
                     $nbDiv++; //On incrémente le nombre de diviseurs

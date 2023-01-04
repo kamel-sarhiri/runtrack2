@@ -22,7 +22,7 @@ while ($str[$i] != '.'){ //parcourt la chaine de caractère jusqu'au point
             if ($str[$i] === $voyelles[$j] ){ //si le caractère de la chaine est égal à une voyelle
                 $dic["voyelles"]++; //incrémente le nombre de voyelles
                 break; //sort de la boucle
-            } else if ($j==11 AND $str[$i]!=" " AND $str[$i]!="." AND $str[$i]!="'" AND $str[$i]!=","){ 
+            } else if ($j==11 AND $str[$i]!=" " AND $str[$i]!="." AND $str[$i]!="'" AND $str[$i]!=","){  //si le caractère de la chaine n'est pas égal à une voyelle et que le caractère n'est pas un espace, un point, une virgule ou une apostrophe
                 $dic["consonnes"]++; //incrémente le nombre de consonnes
             }
         }
