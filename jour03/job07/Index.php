@@ -31,6 +31,7 @@
     echo $str[0]; // Affiche le premier caractère de la string
     ?>
 
+
 </body>
 </html>
     

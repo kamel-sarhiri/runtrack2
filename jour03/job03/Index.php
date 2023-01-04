@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack2</title>
+    <title>Runtrack2 Jour 3</title>
 </head>
 <body>
     <h1>Jour3, Job03</h1>
-    <p><u>Boucle For</u></p>
+    <p><u>Affichage des voyelles</u></p>
     <?php
     $str = "I'm sorry Dave I'm afraid I can't do that.";
     $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
