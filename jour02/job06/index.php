@@ -42,15 +42,12 @@ $s = "_";
                 echo "<br>";
                 echo "<br>";
 
-             
-                for ($h1 = 0; $h1 < $largeur/2.5; $h1++){ // LE TOIT DE LA MAISON
-                   
-                    for ($x = 0; $x < $h1; $x++){
-                        echo "_";
-                        echo "_";
+                for ($h1 = 0; $h1 < $hauteur; $h1++){ // Le haut du rectangle
+                    for ($x = +3; $x < $largeur/2; $x++){
+                        echo $s;
                     }
                 }
-                for ($h2 = 0; $h2 < $hauteur; $h2++) { // LE RESTE DE LA MAISON
+                for ($h2 = 0; $h2 < $hauteur; $h2++) { // Le reste du rectangle
                     if ($h2 == 0) {
                         echo "&nbsp";
                     }
