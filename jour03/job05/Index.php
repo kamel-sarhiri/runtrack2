@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack2</title>
+    <title>Runtrack2 Jour 3</title>
 </head>
 <body>
     <h1>Jour3, Job05</h1>
-    <p><u>Décompte des consonnes et des voyelles</u></p>
+    <p><u>Décompte de consonnes et voyelles</u></p>
     <?php
 $str= "On n'est pas le meilleur quand on le croit mais quand on le sait.";
 $voyelles= ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U', 'y', 'Y'];
@@ -33,7 +33,7 @@ while ($str[$i] != '.'){ //parcourt la chaine de caractère jusqu'au point
 ?>
 
     
-    <table border : 1px >
+    <table border : 2px . >
         <tr><th>Consonnes</th><th>Voyelles</th></tr>
         <tr>
             <td>

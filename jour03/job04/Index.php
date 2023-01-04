@@ -17,9 +17,25 @@
     for ($i = 0; (isset($str [$i])); $i++) {
         $count++; // Compte le nombre de caractères
         }
-       
-        echo "la phrase contient $count caractères" // Affiche le nombre de caractères
-          
+
+        echo "La phrase contient $count caractères" // Affiche le nombre de caractères
+
+    ?>
+
+    <p><u>Boucle While</u></p>
+    <?php
+    $str = "Dans l'espace, personne ne vous entend crier.";
+    $count = 0;
+    echo $str."<br>";
+
+    $i = 0;
+     while (isset($str [$i])) { // Tant que l'index existe
+        $count++; // Compte le nombre de caractères
+        $i++; // Incrémente de 1
+        }
+
+        echo "La phrase contient $count caractères" // Affiche le nombre de caractères
+
     ?>
 
     
