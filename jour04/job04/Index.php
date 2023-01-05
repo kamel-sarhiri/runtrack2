@@ -32,7 +32,6 @@
     <table border : 1px >
         <tr><th>Arguments</th><th>Valeurs</th></tr> 
         <?php
-            $count=0;
             foreach ($_POST as $args => $value) {
                 $len=0;
                 for ($i = 0; (isset($value[$i])); $i++) {

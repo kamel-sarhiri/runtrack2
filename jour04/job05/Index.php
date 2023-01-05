@@ -1,3 +1,8 @@
+<?php
+$Rambo = "C'est pas ma guerre";
+$Else = "Votre pire cauchemar";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,11 +20,11 @@
 
     <form  action="" method="post">
         <label for="username">Nom d'utilisateur :</label>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username" placeholder="Login" require>
         <br>
         <br>
         <label for="password">Mot de passe :</label>
-        <input type="text" name="password" id="password">
+        <input type="text" name="password" id="password" placeholder="Mot de passe" require>
         <br>
         <br>
         <input type="submit" value="Envoyer">
@@ -29,12 +34,14 @@
     <?php
         if (isset($_POST['username']) && isset($_POST['password'])) {
             if ($_POST['username'] == "John" && $_POST['password'] == "Rambo") {
-                echo "C'est pas ma guerre";
+                echo $Rambo;
             } else {
-                echo "Votre pire cauchemar";
+                echo $Else;
             }
         }
     ?>
+
+    
 
 </body>
 </html>

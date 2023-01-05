@@ -33,11 +33,11 @@
     $count=0;
     foreach ($_POST as $args => $value) {
         $len=0;
-        for ($i = 0; (isset($value[$i])); $i++) {
+        for ($i = 0; (isset($value[$i])); $i++) { 
         $len++; // Compte le nombre d'arguments
         }
-        if ($len > 0) {
-            $count++;
+        if ($len > 0) { // Si l'argument est non nul
+            $count++; // Incrémente le nombre d'arguments
         }
     }
     echo "le formulaire contient $count caractères" // Affiche le nombre d'arguments

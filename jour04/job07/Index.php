@@ -1,7 +1,7 @@
 <!-- Partie PHP -->
 <?php
 $e = "&nbsp;"; // pour echo un espace
-$s = "_";
+$s = "_"; // pour echo un underscore
 ?>
 
 <!-- Partie HTML -->
@@ -21,11 +21,11 @@ $s = "_";
 
     <form action="" method="get">
         <label for="largeur">Entrez la largeur :</label>
-        <input type="texte" name="largeur" id="largeur">
+        <input type="texte" name="largeur" id="largeur" placeholder="">
         <br>
         <br>
         <label for="hauteur">Entrez la hauteur :</label>
-        <input type="texte" name="hauteur" id="hauteur">
+        <input type="texte" name="hauteur" id="hauteur" placeholder="">
         <br>
         <br>
         <input type="submit" value="Envoyer">
@@ -44,35 +44,39 @@ $s = "_";
 
                 for ($h1 = 0; $h1 < $largeur/2; $h1++){ // LE TOIT DE LA MAISON
                     for ($j = $largeur/2; $j > $h1; $j--){
-                        echo "&nbsp";
+                        echo $e;
                     }
                     echo "/";
                     for ($x = 0; $x < $h1; $x++){
-                        echo "_";
-                        echo "_";
+                        echo $s;
+                        echo $s;
                     }
                     echo "\\";
                     echo "<br>";
                 }
                 for ($h2 = 0; $h2 < $hauteur; $h2++) { // LE RESTE DE LA MAISON
                     if ($h2 == 0) {
-                        echo "*";
+                        echo "/";
+                        for ($y = 0; $y < $largeur; $y++) {
+                            echo $s;
+                        }
+                        echo "\\";
                     }
                     else{
                         echo "|";
                     }
                     if ($h2 == $hauteur-1) {
                         for ($y = 0; $y < $largeur; $y++) {
-                            echo "_";
+                            echo $s;
                         }
                     }
                     else{
                         for ($y = 0; $y < $largeur; $y++) {
-                            echo "&nbsp";
+                            echo $e;
                         }
                     }
                     if ($h2 == 0) {
-                        echo "*";
+                        echo "";
                     }
                     else{
                         echo "|";

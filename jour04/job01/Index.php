@@ -26,7 +26,8 @@
         <br>
         <br>
         <input type="submit" value="Envoyer">
-
+        <br>
+        <br>
     </form>
 
     <?php
@@ -36,12 +37,19 @@
         for ($i = 0; (isset($value[$i])); $i++) {
         $len++; // Compte le nombre d'arguments
         }
-        if ($len > 0) {
-            $count++;
+        if ($len > 0) { // Si l'argument est non nul
+            $count++; // Incrémente le nombre d'arguments
         }
     }
-    echo "le formulaire contient $count caractères" // Affiche le nombre d'arguments
+    echo "Le formulaire contient $count caractères" // Affiche le nombre d'arguments
     
+    ?>
+    <?php
+
+    var_dump($len);
+    var_dump($count);
+    var_dump($_GET);
+    var_dump($i);
     ?>
 
 </body>

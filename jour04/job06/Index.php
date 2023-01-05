@@ -23,13 +23,12 @@
 
     <?php
         if (isset($_GET['nombre'])) {
-            $nombre = $_GET['nombre'];
+            $nombre = (int)$_GET['nombre'];
             if ($nombre%2 == 0) {
                 echo "Le nombre est pair";
             } else {
                 echo "Le nombre est impair";
             }
-           
         }
     
     ?>
