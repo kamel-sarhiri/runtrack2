@@ -32,7 +32,6 @@
     <table border : 1px >
         <tr><th>Arguments</th><th>Valeurs</th></tr> 
         <?php
-            $count=0;
             foreach ($_GET as $args => $value) { // Pour chaque argument et valeur
                 $len=0; // Initialise la variable à 0
                 for ($i = 0; (isset($value[$i])); $i++) { 
