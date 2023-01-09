@@ -14,6 +14,8 @@ h1 {
 
 body {
   background-color: coral;
+  background-image: url(img/elephant_groupe2.jpg);
+  background-position: center;
 }
 
 input,
