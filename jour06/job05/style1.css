@@ -14,6 +14,11 @@ h1 {
   font-weight: bold;
 }
 
+body {
+  background-image: url(img/gettyimages-941127584-612x612.jpg);
+  background-size: cover;
+}
+
 input,
 select,
 button {
@@ -23,7 +28,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #588b45;
+  background-color: coral;
   border-radius: 10px;
 }
 
@@ -39,5 +44,5 @@ button {
 }
 
 #bouton:hover {
-  background-color: #154284;
+  background-color: #fff;
 }

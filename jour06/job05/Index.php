@@ -11,7 +11,6 @@
             if ($style != "") {
                 echo "<link rel='stylesheet' href='$style.css' />";
             }
-            
             else {
                 echo "<link rel='stylesheet' href='style1.css' />";
             }
@@ -25,7 +24,7 @@
 <body>
     <h1>jour 6 Job05</h1>
     <br>
-    <h3>Liste déroulante :</h3>
+    <h3>Veuillez choisir un style dans la liste :</h3>
     <br>
     <div class="boite_horizontale">
         <form method="get" action="">

@@ -12,6 +12,11 @@ h1 {
   font-weight: bold;
 }
 
+body {
+  background-image: url(img/bureau.jpg);
+  background-size: cover;
+}
+
 input,
 select,
 button {
