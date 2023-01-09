@@ -28,7 +28,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #313131;
+  background-color: black;
   border-radius: 10px;
 }
 
