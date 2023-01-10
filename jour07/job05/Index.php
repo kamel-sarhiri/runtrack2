@@ -13,12 +13,12 @@
     <h3>Les fonctions :</h3>
     <br>
     <form  action="" method="get">
-        <label for="mot"></label>
-        <input type="text" name="mot" id="mot" placeholder="Entrez un mot">
+        <label for="word"></label>
+        <input type="text" name="word" id="word" placeholder="Entrez un mot">
         <br>
         <br>
-        <label for="lettre"></label>
-        <input type="text" name="lettre" id="lettre" placeholder="Entrez une lettre">
+        <label for="letter"></label>
+        <input type="text" name="letter" id="letter" placeholder="Entrez une lettre">
         <br>
         <br>
         <input type="submit" value="Envoyer">
@@ -28,21 +28,21 @@
     <br>
     <?php
 
-    function occurence($mot, $lettre) {
+    function occurence($word, $letter) {
         $occurence = 0;
-        for ($i=0; isset(($mot[$i])); $i++) {
-            if ($mot[$i] == $lettre) {
+        for ($i=0; isset(($word[$i])); $i++) {
+            if ($word[$i] == $letter) {
                 $occurence++;
             }
         }
         return $occurence;
     }
 
-    if (isset($_GET["mot"]) && isset($_GET["lettre"])) {
-        $mot = $_GET["mot"];
-        $lettre = $_GET["lettre"];
-        $occurence = occurence($mot, $lettre);
-        echo "La lettre $lettre apparait $occurence fois dans le mot $mot";
+    if (isset($_GET["word"]) && isset($_GET["letter"])) {
+        $word = $_GET["word"];
+        $letter = $_GET["letter"];
+        $occurence = occurence($word, $letter);
+        echo "La lettre $letter apparait $occurence fois dans le mot $word";
     }
 
     ?>

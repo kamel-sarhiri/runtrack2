@@ -1,7 +1,7 @@
 <?php
     
-    $a = $_GET['nombre1'];
-    $b = $_GET['nombre2'];
+    $a = $_GET['number1'];
+    $b = $_GET['number2'];
     $operation = $_GET['operator'];
     
    
@@ -49,8 +49,8 @@
     <h3>Les fonctions :</h3>
     <br>
     <form  action="" method="get">
-        <label for="nombre1"></label>
-        <input type="text" name="nombre1" id="nombre1" placeholder="Entrez un nombre">
+        <label for="number1"></label>
+        <input type="text" name="number1" id="number1" placeholder="Entrez un nombre">
         <br>
         <br>
         <label for="operator"></label>
@@ -63,8 +63,8 @@
             </select>
         <br>
         <br>
-        <label for="nombre2"></label>
-        <input type="text" name="nombre2" id="nombre2" placeholder="Entrer un nombre">
+        <label for="number2"></label>
+        <input type="text" name="number2" id="number2" placeholder="Entrer un nombre">
         <br>
         <br>
         <input type="submit" value="Réaliser l'opération">
@@ -73,9 +73,9 @@
     <br>
     <br>
     <?php
-        if (isset($_GET['nombre1']) && isset($_GET['nombre2']) && isset($_GET['operator'])) {
-            $number1 = $_GET['nombre1'];
-            $number2 = $_GET['nombre2'];
+        if (isset($_GET['number1']) && isset($_GET['number2']) && isset($_GET['operator'])) {
+            $number1 = $_GET['number1'];
+            $number2 = $_GET['number2'];
             $operator = $_GET['operator'];
             echo "Le résultat est : ".calcul($number1, $operator, $number2);
         }
