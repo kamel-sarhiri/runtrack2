@@ -6,6 +6,8 @@ if (isset($_COOKIE['nbvisites'])) {
     setcookie('nbvisites', '1', time() + 365*24*3600);
 }
 
+//isset($_COOKIE['nbvisites']) ? setcookie('nbvisites', $_COOKIE['nbvisites'] + 1, time() + 365*24*3600) : setcookie('nbvisites', '1', time() + 365*24*3600);
+
 ?>
 
 <!DOCTYPE html>
@@ -35,5 +37,4 @@ if (isset($_COOKIE['nbvisites'])) {
     }
     echo "Vous avez visité cette page ".$_COOKIE['nbvisites']." fois";
 
-    var_dump($_COOKIE);
     ?>

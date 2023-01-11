@@ -2,7 +2,18 @@
 
 session_start();
 //si la variable existe, incrémenter de 1 sinon la créer et lui donner la valeur 1
-isset($_SESSION['nbvisites']) ? $_SESSION['nbvisites']++ : $_SESSION['nbvisites'] = 1;
+//isset($_SESSION['nbvisites']) ? $_SESSION['nbvisites']++ : $_SESSION['nbvisites'] = 1;
+
+if (isset($_SESSION['nbvisites'])) {
+    $_SESSION['nbvisites']++;
+    }
+    else{
+        $_SESSION['nbvisites'] = 1;
+}
+
+
+
+
 ?>
 
 <!DOCTYPE html>

@@ -1,14 +1,18 @@
+<!-- Partie PHP -->
 <?php
-
-if (isset($_POST['prenom'])) {
-    $_COOKIE['prenom'] = $_POST['prenom'] ;
-}
-  
-
-
+    
+    if (isset($_POST['prenom'])){ //si un prénom est saisi
+        setcookie('prenom', $_POST['prenom'], time() + 365*24*3600);
+        $_COOKIE['prenom'] = $_POST['prenom'];
+    }
+    else if (isset($_POST['deco'])){
+        setcookie('prenom', '', time() - 3600);
+        $_COOKIE['prenom'] = null;
+    }
 
 ?>
 
+<!-- Partie HTML -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,33 +22,28 @@ if (isset($_POST['prenom'])) {
     <title>jour 8 job04</title>
 </head>
 <body>
-    <h1>jour 8 job04</h1>
-    <br>
-    <h3>Les sessions :</h3>
-    <br>
-    <form  action="" method="post">
-        <label for="prenom"></label>
-        <input type="text" name="prenom" id="prenom" placeholder="Entrez un prénom">
-        <input type="submit" value="Connexion" name="envoyer">
-    </form>
+    <h1>Les sessions/cookies</h1>
+    <h2>jour 8 job04</h2>
     <br>
     <br>
-
     <?php
-    if (isset($_POST['prenom'])) {
-    echo "Bonjour ".$_COOKIE['prenom'];
-    echo "<input type='submit' value='Déconnexion' name='envoyer'>";
-    } else {
-    echo "<form action='' method='post'>
-    <label for='prenom'></label>
-        <input type='text' name='prenom' id='prenom' placeholder='Entrez un prénom'>
-        <input type='submit' value='déconnexion' name='envoyer'>
-    </form>";
-}
+        if (isset($_COOKIE['prenom'])) {    //utilisateur déjà connecté
+            echo 'Bonjour ' . $_COOKIE['prenom'] . ' !<br><br>';
+            echo "<form action='' method='post'>
+                <input type='submit' value='Déconnexion' name='deco'>
+            </form>";
+        }
+        else { // Utilisateur pas encore connecté
+            echo 'Bonjour !<br>';
+            echo 'Entrez votre prénom pour vous connecter <br>';
+            echo "<form action='' method='post'>
+                <input type='text' name='prenom' placeholder='Entrez votre prénom'>
+                <input type='submit' value='connexion'>
+                </form>
+            <br>
+            <br>";
+        }
     ?>
 
-
-
-
-
-
+</body>
+</html>

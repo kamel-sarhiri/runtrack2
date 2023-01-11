@@ -17,44 +17,67 @@ session_start();
     <br>
     <h3>Les sessions :</h3>
     <br>
-    <form  action="" method="post">
-        <label for="prenom"></label>
-        <input type="text" name="prenom" id="prenom" placeholder="Entrez un prénom">
-        <input type="submit" value="Envoyer" name="envoyer">
+     <form action="" method="post">
+        <input type="text" name="prenom" placeholder="Entrez votre prénom">
+        <input type="submit" value="Envoyer">
     </form>
     <br>
     <br>
-    <form action="" method="post">
-        <label for="reset">Remettre le compteur à zero (cliquez 2 fois) :</label>
-        <input type="submit" value="Reset" name="reset">
-
-    </form>
-    <br>
-    <br>
-
     <?php
-    if (isset($_POST["prenom"])) {
-        $_SESSION["prenom"][]= $_POST["prenom"];
-    }
+        // Empêcher de mettre 2 fois le même prénom (pas nécessaire)
+
+        // if (isset($_POST['prenom'])) {
+        //     if (isset($_SESSION['prenom'])) {
+        //         foreach ($_SESSION['prenom'] as $index => $value){
+        //             if ($_POST['prenom'] == $value) {
+        //                 break;
+        //             }
+        //             else {
+        //                 $_SESSION['prenom'][] = $_POST['prenom'];
+        //                 break;
+        //             }
+        //         }
+        //     }
+        //     else {
+        //         $_SESSION['prenom'][] = $_POST['prenom'];
+        //     }
+        // }
+
+        // Ajouter le prénom dans le tableau
+        if (isset($_POST['prenom'])) {
+            $_SESSION['prenom'][] = $_POST['prenom'];
+        }
+
     ?>
 
     <ul>
         <?php
-        if (isset($_SESSION["prenom"])) {
-            foreach ($_SESSION["prenom"] as $value) {
-                echo "<li>$value</li>";
+            if (isset($_SESSION['prenom'])) {
+                foreach ($_SESSION['prenom'] as $index => $value) {
+                    echo '<li>' . $value . '</li>';
+                } 
             }
-        }
         ?>
     </ul>
 
+    <form action="" method="post">
+        <br>
+        <br>
+        <label for="reset">Cliquez ici pour effacer la liste de prénom :</label><br>
+        <input type='submit' value='reset' name='reset'>
+        <br>
+        <br>
+    </form>
+
     <?php
-    if (isset($_POST["reset"])) {
-        session_destroy();
+    //reset
+    if (isset($_POST['reset'])) {
+        unset($_SESSION['prenom']);
     }
     ?>
 
 </body>
+
 </html>
 
 
