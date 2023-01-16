@@ -49,7 +49,6 @@ $request = $mysqli->query("SELECT prenom, nom, naissance FROM etudiants WHERE na
                 <th>prénom</th>
                 <th>nom</th>
                 <th>date de naissance</th>
-               
             </tr>
         </thead>
         <tbody>

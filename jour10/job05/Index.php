@@ -3,7 +3,7 @@
 
 $mysqli = new mysqli("localhost", "root", "", "jour09");
 
-$request = $mysqli->query("SELECT * FROM `etudiants` WHERE `age` > 18;");
+$request = $mysqli->query("SELECT * FROM `etudiants` WHERE `naissance` > 20050113;");
 
 
 // affichage

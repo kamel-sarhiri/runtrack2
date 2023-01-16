@@ -61,6 +61,7 @@ $request = $mysqli->query("SELECT `salles`.`nom`, `etage`.`nom` FROM `salles` IN
                 echo "<td>".$result[1]."</td>";
                 echo "<tr>";
             }
+
             ?>
         </tbody>
     </table>
